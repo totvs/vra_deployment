@@ -28,8 +28,8 @@ resource "vra_deployment" "deployment" {
     rede = each.value["environment"]
     tamanho = each.value["flavor"]
     username = each.value["vm_username"]
-    count_disk = each_value["extra_disk_count"]
-    size_disk2 = each_value["extra_disk_size"]
+    count_disk = each.value["extra_disk_count"]
+    size_disk2 = each.value["extra_disk_size"]
   }
   
   timeouts {
