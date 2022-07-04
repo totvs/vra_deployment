@@ -10,8 +10,7 @@ variable "deployment_spec" {
     environment          = string
     flavor               = string
     vm_username          = string
-    extra_disk_count     = number
-    extra_disk_size      = number
+    extra_disks          = string
   }))
   description = "Specs of Deployments"
 }
