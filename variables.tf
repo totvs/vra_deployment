@@ -6,7 +6,6 @@ variable "deployment_spec" {
     deployment_name      = string
     backup               = string
     description          = string
-    vm_password          = string
     environment          = string
     flavor               = string
     vm_username          = string
