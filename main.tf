@@ -26,7 +26,7 @@ resource "vra_deployment" "deployment" {
     description = each.value["description"]
     rede = each.value["environment"]
     tamanho = each.value["flavor"]
-    username = each.value["vm_username"]
+    users = each.value["vm_username"]
     domain_vm = each.value["vm_domain"]
     disks = each.value["disks"]
   }
