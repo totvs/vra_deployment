@@ -24,14 +24,11 @@ resource "vra_deployment" "deployment" {
     MachineName = each.value["deployment_name"]
     backup = each.value["backup"]
     description = each.value["description"]
-    password = each.value["vm_password"]
     rede = each.value["environment"]
     tamanho = each.value["flavor"]
     username = each.value["vm_username"]
     domain_vm = each.value["vm_domain"]
-    users = each.value["vm_username"]
-    count_disk = eacho_value["count_disks"]
-    size_disk2 = eacho_value["size_disk2"]
+    disks = each.value["disks"]
   }
   
   timeouts {
