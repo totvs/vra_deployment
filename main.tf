@@ -32,9 +32,9 @@ resource "vra_deployment" "deployment" {
   }
   
   timeouts {
-    create = "30m"
-    delete = "30m"
-    update = "30m"
+    create = "600m"
+    delete = "600m"
+    update = "600m"
   }
 }
 
