@@ -8,7 +8,7 @@ terraform {
   required_version = ">= 0.13"
 }
 
-# Add new Deployment
+# Add new Deployment redhat 8
 
 resource "vra_deployment" "deployment" {
   for_each = var.deployment_spec
