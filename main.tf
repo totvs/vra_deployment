@@ -24,10 +24,8 @@ resource "vra_deployment" "deployment" {
     MachineName = each.value["deployment_name"]
     backup = each.value["backup"]
     description = each.value["description"]
-    password = each.value["vm_password"]
     rede = each.value["environment"]
     tamanho = each.value["flavor"]
-    username = each.value["vm_username"]
     disks = each.value["extra_disks"]
   }
   
