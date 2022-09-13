@@ -5,7 +5,7 @@ terraform {
       source  = "vmware/vra"
     }
   }
-  required_version = ">= 0.13"
+  required_version = ">= 0.5.2"
 }
 
 # Add new Deployment
@@ -32,9 +32,9 @@ resource "vra_deployment" "deployment" {
   }
   
   timeouts {
-    create = "600m"
-    delete = "600m"
-    update = "600m"
+    create = "240m"
+    delete = "240m"
+    update = "240m"
   }
 }
 
